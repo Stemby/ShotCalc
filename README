@@ -1,0 +1,19 @@
+Programming camera placement and settings in stop motion shots.
+Copyright © 2012, Carlo Stemberger
+
+LICENCE
+
+This software is released under the GNU GPL licence (see COPYING).
+
+
+DEPENDENCIES
+
+You only need Python 2.7, NumPy and SciPy. On Debian/Ubuntu:
+
+$ sudo aptitude install python-scipy
+
+
+RUN ON GNU/LINUX
+
+$ ./shotcalc.py
+
