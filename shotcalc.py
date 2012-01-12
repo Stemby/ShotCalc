@@ -129,6 +129,7 @@ class TimeCode(object):
 def interpolate(steps, smooth_start=True, smooth_stop=True):
     """Return a smooth curve through the steps."""
     # TODO: not only smooth start and stop (cut)
+    # TODO: add "follow" (not programmed) movement
     x = np.array([step[0] for step in steps])
     y = np.array([step[1] for step in steps], float)
     func = pchip(x, y)
