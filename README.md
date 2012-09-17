@@ -12,6 +12,7 @@ COPYING).
 Dependencies
 ------------
 You only need Python 2.7, NumPy, SciPy and matplotlib. On Debian/Ubuntu:
+
     $ sudo aptitude install python-scipy python-matplotlib
 
 Run on GNU/Linux
