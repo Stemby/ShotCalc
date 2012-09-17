@@ -1,20 +1,21 @@
+About ShotCalc
+==============
 Programming camera placement and settings in stop motion shots.
+
 Copyright © 2012, Carlo Stemberger
 
-LICENCE
-
-This software is released under the GNU GPL licence (see the included file
+License
+-------
+This software is released under the GNU GPL license (see the included file
 COPYING).
 
-
-DEPENDENCIES
-
+Dependencies
+------------
 You only need Python 2.7, NumPy, SciPy and matplotlib. On Debian/Ubuntu:
 
 $ sudo aptitude install python-scipy python-matplotlib
 
-
-RUN ON GNU/LINUX
-
+Run on GNU/Linux
+----------------
 $ ./shotcalc.py
 
