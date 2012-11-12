@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 #    ShotCalc
 #    Copyright (C) 2012, Carlo Stemberger
@@ -52,9 +52,9 @@ class Camera(object):
                         self.steps[timecode][movement]))
                     steps.sort()
             values[movement] = interpolate(steps)
-        for frame in range(min(self.steps), max(self.steps) + 1):
+        for frame in range(int(min(self.steps)), int(max(self.steps)) + 1):
             yield (frame, dict((movement, func(frame)) for movement,
-                        func in values.iteritems()))
+                        func in values.items()))
 
 
 class TimeCode(object):
@@ -125,6 +125,9 @@ class TimeCode(object):
     def __int__(self):
         return self.fnumber
 
+    def __hash__(self):
+        return self.fnumber
+
 
 def interpolate(steps, smooth_start=True, smooth_stop=True):
     """Return a smooth curve through the steps."""
@@ -142,6 +145,7 @@ def interpolate(steps, smooth_start=True, smooth_stop=True):
 
     return func 
 
+
 if __name__ == '__main__':
     # TODO: run a Qt GUI
 
@@ -151,6 +155,6 @@ if __name__ == '__main__':
     c.add_step('00:00:10:00', {'dolly': 400, 'pan': 90, 'tilt': 0})
 
     prova = c.find_positions()
-    print prova.next()
-    print prova.next()
+    print(next(prova))
+    print(next(prova))
 

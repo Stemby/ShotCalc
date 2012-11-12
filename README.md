@@ -11,9 +11,9 @@ COPYING).
 
 Dependencies
 ------------
-You only need Python 2.7, NumPy, SciPy and matplotlib. On Debian/Ubuntu:
+You only need Python 3, NumPy, SciPy, matplotlib and Tkinter. On Debian/Ubuntu:
 
-    $ sudo aptitude install python-scipy python-matplotlib
+    $ sudo aptitude install python3-scipy python3-matplotlib python3-tk
 
 Run on GNU/Linux
 ----------------
