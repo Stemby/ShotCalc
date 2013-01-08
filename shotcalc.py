@@ -138,10 +138,10 @@ def interpolate(steps, smooth_start=True, smooth_stop=True):
     func = pchip(x, y)
     
     # NOTE: debugging code
-    import matplotlib.pyplot as plt
-    xnew = np.linspace(x[0], x[-1], (x[-1] - x[0]) // 10)
-    plt.plot(x, y, '-', xnew, func(xnew), 'o')
-    plt.show()
+    #import matplotlib.pyplot as plt
+    #xnew = np.linspace(x[0], x[-1], (x[-1] - x[0]) // 10)
+    #plt.plot(x, y, '-', xnew, func(xnew), 'o')
+    #plt.show()
 
     return func 
 
